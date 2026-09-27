@@ -18,3 +18,8 @@ jobs:
       with:
         name: hello-artifact
         path: hello.txt
+
+    - name: display the content of hello.txt
+      run: cat ./artifacts/hello.txt
+    
+     
