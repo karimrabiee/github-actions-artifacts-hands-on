@@ -18,3 +18,13 @@ jobs:
       with:
         name: hello-artifact
         path: hello.txt
+  download:
+    runs-on: ubuntu-latest
+    steps:
+    - name: download dragon.txt file
+      uses: actions/download-artifact@v8
+      with:
+            # Name of the artifact to download.
+            # If unspecified, all artifacts for the run are downloaded.
+            # Optional.
+           name: hello-artifact
